@@ -16,10 +16,14 @@ model Users {
 }
 
 model Visitors {
-  id       String   @id @default(auto()) @map("_id") @db.ObjectId
-  name     String
-  email    String
-  birthday DateTime
-  phone    String
-  pray     Boolean
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  name                  String
+  address               String
+  phone                 String
+  birthday              DateTime
+  email                 String
+  howFindOutAboutChurch String
+  memberOfAnotherChurch Boolean
+  needPrayer            Boolean
+  suggestion            String
 }
